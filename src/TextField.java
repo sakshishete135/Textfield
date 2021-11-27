@@ -34,12 +34,11 @@ public class TextField extends Application{
 	    root1.addRow(0,lbl,txt);
 	    root1.addRow(1,lbl1,txt1);
 	    root1.addRow(2,btn);
-	  //  btn.setHalignment(2,HPos.CENTER);
+	  
 	    root1.setAlignment(Pos.CENTER);
 	    
 	    Scene scene = new Scene(root1, 800,600);
 		primaryStage.setScene(scene);
-//		primaryStage.setScene(scene1);
 		primaryStage.show();
 	}
 

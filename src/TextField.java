@@ -5,10 +5,8 @@ import javafx.application.*;
 import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.Group;
 import javafx.stage.Stage;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 import javafx.scene.control.*;
 
 public class TextField2 extends Application{
@@ -32,11 +30,12 @@ public class TextField2 extends Application{
 	    GridPane root1 = new GridPane();
 	    
 	    root1.addRow(0,lbl,txt);
-	    root1.addRow(1,lbl1,txt1);
-	    root1.addRow(2,btn);
+	    root1.addRow(1,new Text(""));	
+	    root1.addRow(2,lbl1,txt1);
+            root1.addRow(3,new Text(""));			  
+	    root1.addRow(4,btn);
 	  
 	    root1.setAlignment(Pos.CENTER);
-		
 	    root1.setColumnSpan(btn,2);
 	    root1.setHalignment(btn,HPos.CENTER);	
 	    

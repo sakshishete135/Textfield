@@ -11,7 +11,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.control.*;
 
-public class TextField extends Application{
+public class TextField2 extends Application{
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -19,7 +19,7 @@ public class TextField extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		
 		
-		primaryStage.setTitle("Welcome Page");
+	    primaryStage.setTitle("Welcome Page");
 		
 
 	    TextField txt =  new TextField();
@@ -36,6 +36,9 @@ public class TextField extends Application{
 	    root1.addRow(2,btn);
 	  
 	    root1.setAlignment(Pos.CENTER);
+		
+	    root1.setColumnSpan(btn,2);
+	    root1.setHalignment(btn,HPos.CENTER);	
 	    
 	    Scene scene = new Scene(root1, 800,600);
 		primaryStage.setScene(scene);
